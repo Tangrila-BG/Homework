@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        div {
+            float: inherit;
+            margin-top: 10%;
+            margin-left: 25%;
+            
+        }
+
+        td {
+            width: 200px;
+            height: 200px;
+            border: solid 1px;
+            background-color: grey;
+            font-size: 100px;
+            text-align: center;
+        }
+
+        #message {
+        font-size: 80px;
+        margin: auto;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <table>
+            <tbody>
+                <tr>
+                    <td id="1" onclick="game(1)"></td>
+                    <td id="2" onclick="game(2)"></td>
+                    <td id="3" onclick="game(3)"></td>
+                </tr>
+                <tr>
+                    <td id="4" onclick="game(4)"></td>
+                    <td id="5" onclick="game(5)"></td>
+                    <td id="6" onclick="game(6)"></td>
+                </tr>
+                <tr>
+                    <td id="7" onclick="game(7)"></td>
+                    <td id="8" onclick="game(8)"></td>
+                    <td id="9" onclick="game(9)"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="restart" onclick="restart()">Restart</button>
+        <div id="message"></div>
+    </div>
+    <script type="text/javascript">
+        // value of 1 is player 1, 0 is player 2
+        var player = 1;
+
+        var field = document.getElementsByTagName('td');
+
+        function game(cell) {
+
+            // writes the symbol on the selected tile
+            // and disables further selection on said tile
+            // subtracts 1 from variable player allowing player 2 the turn
+            // checks for winner every turn
+            if (player == 1) {
+                document.getElementById(cell).innerHTML = 'X';
+                document.getElementById(cell).style.pointerEvents = 'none';
+                player--
+                winner();
+
+                // same as above but adds 1 to player
+                // allowing player 1 the turn
+            } else {
+                document.getElementById(cell).innerHTML = 'O';
+                document.getElementById(cell).style.pointerEvents = 'none';
+                player++;
+                winner();
+            }
+        }
+
+        function winner() {
+            var checkDraw = false;
+            // winning combinations player 1
+            if (
+                // horizontal
+                field[0].innerHTML == 'X' &&
+                field[1].innerHTML == 'X' &&
+                field[2].innerHTML == 'X'
+                ||
+                field[3].innerHTML == 'X' &&
+                field[4].innerHTML == 'X' &&
+                field[5].innerHTML == 'X'
+                ||
+                field[6].innerHTML == 'X' &&
+                field[7].innerHTML == 'X' &&
+                field[8].innerHTML == 'X'
+                // vertical
+                ||
+                field[0].innerHTML == 'X' &&
+                field[3].innerHTML == 'X' &&
+                field[6].innerHTML == 'X'
+                ||
+                field[1].innerHTML == 'X' &&
+                field[4].innerHTML == 'X' &&
+                field[7].innerHTML == 'X'
+                ||
+                field[2].innerHTML == 'X' &&
+                field[5].innerHTML == 'X' &&
+                field[8].innerHTML == 'X'
+                // diagonal
+                ||
+                field[0].innerHTML == 'X' &&
+                field[4].innerHTML == 'X' &&
+                field[8].innerHTML == 'X'
+                ||
+                field[2].innerHTML == 'X' &&
+                field[4].innerHTML == 'X' &&
+                field[6].innerHTML == 'X'
+                ) {
+
+                if (document.getElementById('message').innerHTML == '') {
+                    document.getElementById('message').innerHTML = 'Player 1 WINS!';
+
+                    // disables further selection after the player has won
+                    for (var i = 0; i < field.length; i++) {
+                        field[i].style.pointerEvents = 'none'
+                    }
+                }
+
+            // player 2
+            } else if (
+                // horizontal
+                field[0].innerHTML == 'O' &&
+                field[1].innerHTML == 'O' &&
+                field[2].innerHTML == 'O'
+                ||
+                field[3].innerHTML == 'O' &&
+                field[4].innerHTML == 'O' &&
+                field[5].innerHTML == 'O'
+                ||
+                field[6].innerHTML == 'O' &&
+                field[7].innerHTML == 'O' &&
+                field[8].innerHTML == 'O'
+                ||
+                // vertical
+                field[0].innerHTML == 'O' &&
+                field[3].innerHTML == 'O' &&
+                field[6].innerHTML == 'O'
+                ||
+                field[1].innerHTML == 'O' &&
+                field[4].innerHTML == 'O' &&
+                field[7].innerHTML == 'O'
+                ||
+                field[2].innerHTML == 'O' &&
+                field[5].innerHTML == 'O' &&
+                field[8].innerHTML == 'O'
+                ||
+                // diagonal
+                field[0].innerHTML == 'O' &&
+                field[4].innerHTML == 'O' &&
+                field[8].innerHTML == 'O'
+                ||
+                field[2].innerHTML == 'O' &&
+                field[4].innerHTML == 'O' &&
+                field[6].innerHTML == 'O'
+                ) {
+
+                if (document.getElementById('message').innerHTML == '') {
+                    document.getElementById('message').innerHTML = 'Player 2 WINS!';
+
+                    // disables further selection on the board
+                    for (var j = 0; j < field.length; j++) {
+                        field[j].style.pointerEvents = 'none'
+                    }
+                }
+                
+                // checks if it's a draw
+            } else if (
+                field[0].innerHTML != '' &&
+                field[1].innerHTML != '' &&
+                field[2].innerHTML != '' &&
+                field[3].innerHTML != '' &&
+                field[4].innerHTML != '' &&
+                field[5].innerHTML != '' &&
+                field[6].innerHTML != '' &&
+                field[7].innerHTML != '' &&
+                field[8].innerHTML != ''
+                ) {
+
+                if (document.getElementById('message').innerHTML == '') {
+                    document.getElementById('message').innerHTML = 'DRAW!';
+                }
+            }
+                
+        }
+
+        // returns the turn to player 1, clears the field,
+        // re-enables the selection on the tiles and
+        // clears the message field
+        function restart() {
+            player = 1;
+            document.getElementById('message').innerHTML = '';
+
+            for (k in field) {
+                field[k].innerHTML = '';
+                field[k].style.pointerEvents = 'auto';
+            }
+            
+        }
+    </script>
+</body>
+</html>
