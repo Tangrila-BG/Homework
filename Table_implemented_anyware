@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+        function createTable(array) {
+            var start = array[0];
+            var end = array[1];
+
+            if (end < start) {
+                end = array[0];
+                start = array[1];
+            }
+
+            var number = start;
+            var square = number;
+
+            // styling ** optional, crude and bulky **
+            /**
+            var style = document.createElement('STYLE');
+            document.head.appendChild(style);
+            var style_cell_background = document.createTextNode('td {background-color: #7AB85C; }');
+            var style_cell_text_color = document.createTextNode('td {color: white;}');
+            var style_thead_background = document.createTextNode('th {background-color: black}');
+            var style_thead_text_color = document.createTextNode('th {color: lime}');
+
+            style.appendChild(style_cell_background);
+            style.appendChild(style_cell_text_color);
+            style.appendChild(style_thead_background);
+            style.appendChild(style_thead_text_color);
+            */
+
+            // creates div inside it the table, its head and body
+            var field = document.createElement('div');
+            var table = document.createElement('table');
+            var tableHead = document.createElement('thead');
+            var tableBody = document.createElement('tbody');
+
+            var rows = document.createElement('tr');
+            var cells = document.createElement('td');
+
+            // attributes
+            field.id = 'table';
+            table.setAttribute('border', '1px');
+            table.setAttribute('width', '100%');
+
+            document.body.appendChild(field);
+            field.appendChild(table);
+            table.appendChild(tableHead);
+            table.appendChild(tableBody);
+
+            // creates the head titles and fills them accordingly
+            countHead = 3;
+            while (countHead) {
+                var columns = document.createElement('th');
+                tableHead.appendChild(columns);
+                countHead--;
+            }
+            
+            var headTitles = document.getElementsByTagName('th');
+            headTitles[0].innerHTML = 'Number';
+            headTitles[1].innerHTML = 'Square';
+            headTitles[2].innerHTML = 'Fibonacci';
+            
+            // creates the table rows and their cells
+            var rowsToadd = 1;
+            var cellsToadd = 0;
+            var counter = start;
+            var cellID = 0;
+
+            do {
+                var rows = document.createElement('tr');
+                tableBody.appendChild(rows);
+
+                if (rowsToadd > cellsToadd) {
+
+                    for (var i = 0; i < 3; i++) {
+
+                        var cells = document.createElement('td');
+                        rows.appendChild(cells);
+                        cells.setAttribute('align', 'center');
+
+                        cells.id = 'cell' + cellID;
+                        cellID++;
+
+                    }
+                    cellsToadd++;
+                }
+
+                rowsToadd++;
+                counter++;
+            } while (counter <= end);
+
+            // inputs number, number * number, isFibonacci(number) in the cells respectively
+            var numberCell = 0;
+            var squareCell = 1;
+            var fibonacciCell = 2;
+
+            var count = start;
+            var comapreCellNumber = 0;
+  
+
+            for (; count <= end; count++) {
+                for (var j = 0; j < 3; j++) {
+
+                    var cell = document.getElementById('cell' + comapreCellNumber);
+
+                    if (numberCell == comapreCellNumber) {
+                        cell.innerHTML = number;
+                        number++
+                        numberCell += 3;
+                    }
+
+                    if (squareCell == comapreCellNumber) {
+                        cell.innerHTML = (number - 1) * (number - 1);
+                        squareCell += 3;
+                    }
+
+                    if (fibonacciCell == comapreCellNumber) {
+                        cell.innerHTML = isFibonacci(number - 1);
+                        fibonacciCell += 3;
+                    }
+                    comapreCellNumber++;
+                }
+            }
+
+            // checks if the number is in the fibonacci sequence
+            function isFibonacci(num) {
+                var previous = 0;
+                var current = 1;
+                while (previous <= num) {
+                    if (previous == num) {;
+                        return 'yes';
+                    }
+                    current = previous + current;
+                    previous = current - previous;
+                }
+                return 'no';
+            }
+            return;
+        }
+
+        createTable([2,6]);
+    </script>
+</body>
+</html>
