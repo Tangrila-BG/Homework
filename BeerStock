@@ -1,0 +1,74 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace ProgrammingBasics
+{
+    class ProgrammingBasics
+    {
+
+        static void Main(string[] args)
+        {
+
+            long reservedBeers = long.Parse(Console.ReadLine());
+            long beers = 0;
+            var input = "exam in progress";
+            
+
+            while (input != "exam over")
+            {
+                input = Console.ReadLine().ToLower();
+                var storage = input.Split();
+
+                switch (storage[1])
+                {
+
+                    case "cases":
+
+                        beers += long.Parse(storage[0]) * 24;
+                        break;
+
+                    case "sixpacks":
+
+                        beers += long.Parse(storage[0]) * 6;
+                        break;
+
+                    case "beers":
+
+                        beers += long.Parse(storage[0]);
+                        break;
+                }
+
+            }
+
+            beers -= beers / 100;
+
+            if (beers >= reservedBeers)
+            {
+                beers -= reservedBeers;
+                long cases = beers / 24;
+                beers = beers % 24;
+                long sixpacks = beers / 6;
+                beers = beers % 6;
+
+                Console.WriteLine("Cheers! Beer left: {0} cases, {1} sixpacks and {2} beers.",
+                    cases, sixpacks, beers);
+            }
+            
+            else if (beers < reservedBeers)
+            {
+                reservedBeers -= beers;
+                long cases = reservedBeers / 24;
+                reservedBeers = reservedBeers % 24;
+                long sixpacks = reservedBeers / 6;
+                reservedBeers = reservedBeers % 6;
+
+                Console.WriteLine("Not enough beer. Beer needed: {0} cases, {1} sixpacks and {2} beers.",
+                    cases, sixpacks, reservedBeers);
+            }
+
+            
+        }
+    }
+}
