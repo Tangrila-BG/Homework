@@ -1,0 +1,71 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ProgrammingBasics
+{
+    internal class ProgrammingBasics
+    {
+        private static void Main(string[] args)
+        {
+            // being user friendly :)
+            Console.WriteLine("Point x1: ");
+            var xStart = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Point y1: ");
+            var yStart = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Point x2: ");
+            var xEnd = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Point y2: ");
+            var yEnd = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Point x: ");
+            var xPoint = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Point y: ");
+            var yPoint = decimal.Parse(Console.ReadLine());
+
+            // top corners
+            var topLeftCorner = (xPoint == xStart && yPoint == yStart);
+            var topRightCorner = (xPoint == xStart && yPoint == yEnd);
+
+            // bottom corners
+            var bottomRightCorner = (xPoint == xEnd && yPoint == yEnd);
+            var bottomLeftCorner = (yPoint == yStart && xPoint == xEnd);
+
+            // borders
+            var bottomBorder = (yPoint > yStart && yPoint < yEnd &&
+                                xPoint == xEnd);
+            var leftBorder = (yPoint == yStart && xPoint > xStart &&
+                              xPoint < xEnd);
+            var topBorder = (xPoint == xStart && yPoint > yStart &&
+                            yPoint < yEnd);
+            var rightBorder = (yPoint == yEnd && xPoint > xStart &&
+                                xPoint < xEnd);
+
+            // inside
+            var inside = (yPoint > yStart && yPoint < yEnd &&
+                        xPoint > xStart && xPoint < xEnd);
+
+            if (topLeftCorner)
+                Console.WriteLine("Point: {0}, {1} is on the TOP LEFT CORNER of the figure.", xPoint, yPoint);
+            else if (topRightCorner)
+                Console.WriteLine("Point: {0}, {1} is on the TOP RIGHT CORNER of the figure.", xPoint, yPoint);
+            else if (bottomLeftCorner)
+                Console.WriteLine("Point: {0}, {1} is on the BOTTOM LEFT CORNER of the figure.", xPoint, yPoint);
+            else if (bottomRightCorner)
+                Console.WriteLine("Point: {0}, {1} is on the BOTTOM RIGHT CORNER of the figure.", xPoint, yPoint);
+            else if (bottomBorder)
+                Console.WriteLine("Point: {0}, {1} is on the BOTTOM BORDER of the figure.", xPoint, yPoint);
+            else if (leftBorder)
+                Console.WriteLine("Point: {0}, {1} is on the LEFT BORDER of the figure.", xPoint, yPoint);
+            else if (topBorder)
+                Console.WriteLine("Point: {0}, {1} is on the TOP BORDER of the figure.", xPoint, yPoint);
+            else if (rightBorder)
+                Console.WriteLine("Point: {0}, {1} is on the RIGHGT BORDER of the figure.", xPoint, yPoint);
+            else if (inside)
+                Console.WriteLine("Point: {0}, {1} is INSIDE the figure.", xPoint, yPoint);
+            else
+                Console.WriteLine("Point: {0}, {1} is OUTSIDE the figure.", xPoint, yPoint);
+        }
+    }
+}
