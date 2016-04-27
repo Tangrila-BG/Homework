@@ -1,0 +1,207 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ProgrammingBasics
+{
+    internal class ProgrammingBasics
+    {
+        private static void Main(string[] args)
+        {
+            //                   ---
+            // POINT IN FIGURE   | |
+            //                   | |
+            //                ---   ---
+            //                |       |
+            //                ---------
+
+            Console.WriteLine("Height of the base of the figure: ");
+            var height = double.Parse(Console.ReadLine());
+            while (height != -123)
+            {
+                Console.WriteLine("Point x: ");
+                var pointX = double.Parse(Console.ReadLine());
+
+                Console.WriteLine("Point y: ");
+                var pointY = double.Parse(Console.ReadLine());
+
+                // bottom-left corner of the base of the figure
+                var x1 = 0;
+                var y1 = 0;
+                // top-right corner of the base of the figure
+                var x2 = height;
+                var y2 = height * 3;
+
+                // bottom-left corner of the pillar of the figure
+                var x3 = height;
+                var y3 = height;
+
+                // top-right corner of the pillar of the figure
+                /*
+                 the height of the pillar is times 4 the height of the base
+                 and its width is times 2 the height of the base
+                */
+                var x4 = height * 4;
+                var y4 = height * 2;
+
+                //
+                // PILLAR
+                //
+
+                // inside
+                var insideThePillar = (pointX > x2 && pointX < x4 &&
+                                       pointY > y3 && pointY < y4);
+
+                // pillar top border, left & right corners
+                var pillarTopBorder = (pointX == x4 && pointY > y3 &&
+                                       pointY < y4);
+                var pillarTopLcorner = (pointX == x4 && pointY == y3);
+                var pillarTopRcorner = (pointX == x4 && pointY == y4);
+
+                // pillar left & right borders
+                var pillarLeftBorder = (pointY == y3 && pointX > x3 &&
+                                        pointX < x4);
+                var pillarRightBorder = (pointY == y4 && pointX > x3 &&
+                                        pointX < x4);
+
+                // pillar bottom border, left & right corners
+                var pillarBtmBorder = (pointX == x2 && pointY > x2 &&
+                                       pointY < y4);
+                var pillarBtmLcorner = (pointX == height && pointY == height);
+                var pillarBtmRcorner = (pointX == x2 && pointY == y4);
+
+                //
+                // BASE
+                //
+
+                // inside
+                var insideTheBase = (pointX > x1 && pointX < x2 &&
+                                    pointY > y1 && pointY < y2);
+
+                // base top border, left & right corners
+                var baseTopBorder = (pointX == x2 && pointY > y1 &&
+                                    pointY < y2);
+                var baseTopLcorner = (pointX == height && pointY == y1);
+                var baseTopRcorner = (pointX == x2 && pointY == y2);
+
+                // base left & right borders
+                var baseLeftBorder = (pointY == y1 && pointX > x1 &&
+                                      pointX < x2);
+                var baseRightBorder = (pointY == y2 && pointX > x1 &&
+                                      pointX < x2);
+
+                // base bottom border, left & right corners
+                var baseBotmBorder = (pointX == x1 && pointY > y1 &&
+                                        pointY < y2);
+                var baseBotmLcorner = (pointX == x1 && pointY == y1);
+                var baseBotmRcorner = (pointX == x1 && pointY == y2);
+
+                //
+                // PILLAR OUTPUT
+                //
+
+                // output for pillar top border, left & right corners
+                if (pillarTopBorder)
+                    Console.WriteLine(
+                        "Point {0}, {1} is on the top border of the pillar of the figure",
+                        pointX, pointY);
+                else if (pillarTopLcorner)
+                    Console.WriteLine(
+                        "Point {0}, {1} is on the top-left corner of the pillar of the figure",
+                        pointX, pointY);
+                else if (pillarTopRcorner)
+                    Console.WriteLine(
+                        "Point {0}, {1} is on the top-right corner of the pillar of the figure",
+                        pointX, pointY);
+
+                // output for pillar left & right borders
+                else if (pillarLeftBorder)
+                    Console.WriteLine(
+                        "Point {0}, {1} is on the left border of the pillar of the figure",
+                        pointX, pointY);
+                else if (pillarRightBorder)
+                    Console.WriteLine(
+                        "Point {0}, {1} is on the right border of the pillar of the figure",
+                        pointX, pointY);
+
+                // output for pillar bottom border, left & right corners
+                else if (pillarBtmBorder)
+                    Console.WriteLine(
+                        "Point {0}, {1} is on the bottom border of the pillar of the figure",
+                        pointX, pointY);
+                else if (pillarBtmLcorner)
+                    Console.WriteLine(
+                        "Point {0}, {1} is on the bottom-left corner of the pillar of the figure",
+                        pointX, pointY);
+                else if (pillarBtmRcorner)
+                    Console.WriteLine(
+                        "Point {0}, {1} is on the bottom-right corner of the pillar of the figure",
+                        pointX, pointY);
+
+                // output inside the pillar
+                else if (insideThePillar)
+                    Console.WriteLine(
+                        "Point {0}, {1} is inside the pillar of the figure",
+                        pointX, pointY);
+
+                //
+                // BASE OUTPUT
+                //
+
+                // output for base top border, left & right corners
+                else if (baseTopBorder)
+                    Console.WriteLine(
+                        "Point {0}, {1} is on the top border of the base of the figure",
+                        pointX, pointY);
+                else if (baseTopLcorner)
+                    Console.WriteLine(
+                        "Point {0}, {1} is on the top-left corner of the base of the figure",
+                        pointX, pointY);
+                else if (baseTopRcorner)
+                    Console.WriteLine(
+                        "Point {0}, {1} is on the top-right corner of the base of the figure",
+                        pointX, pointY);
+
+                // output for base left & right borders
+                else if (baseLeftBorder)
+                    Console.WriteLine(
+                        "Point {0}, {1} is on the left border of the base of the figure",
+                        pointX, pointY);
+                else if (baseRightBorder)
+                    Console.WriteLine(
+                        "Point {0}, {1} is on the right border of the base of the figure",
+                        pointX, pointY);
+
+                // output for base bottom border, left & right corners
+                else if (baseBotmBorder)
+                    Console.WriteLine(
+                        "Point {0}, {1} is on the bottom border of the base of the figure",
+                        pointX, pointY);
+                else if (baseBotmLcorner)
+                    Console.WriteLine(
+                        "Point {0}, {1} is on the bottom-left corner of the base of the figure",
+                        pointX, pointY);
+                else if (baseBotmRcorner)
+                    Console.WriteLine(
+                        "Point {0}, {1} is on the bottom-right corner of the base of the figure",
+                        pointX, pointY);
+
+                // output inside the base
+                else if (insideTheBase)
+                    Console.WriteLine(
+                        "Point {0}, {1} is inside the base of the figure",
+                        pointX, pointY);
+
+                // OUTPUT OUTSIDE
+                else if (!insideTheBase || !insideThePillar)
+                    Console.WriteLine("Point {0}, {1} is outside the figure");
+
+                Console.WriteLine();
+                Console.WriteLine("Height of the base of the figure: ");
+                height = double.Parse(Console.ReadLine());
+            }
+        }
+    }
+}
