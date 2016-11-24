@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Generator</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="wrapper">
+
+</div>
+<div class="root"></div>
+<script>
+    window.onload = function () {
+        createBook("#wrapper", "Alice in Wonderland", "Lewis Carroll", 1111);
+        createBook("#wrapper", "Alice in Wonderland", "Lewis Carroll", 1111);
+        createBook(".root", "Alice in Wonderland", "Lewis Carroll", 1111);
+    };
+
+    function createBook(selector, title, author, isbn) {
+        let booksContainer = $(selector);
+        let currentBooks = $(selector + ' div');
+        let numberToAssign = 1;
+        let bookContainer = $('<div style="border: medium none"></div>');
+        let titleP = $(`<p class="title">${title}</p>`);
+        let authorP = $(`<p class="author">${author}</p>`);
+        let isbnP = $(`<p class="isbn">${isbn}</p>`);
+        let btnSelect = $('<button>Select</button>');
+        let btnDeselect = $('<button>Deselect</button>');
+        
+        // recover the number of the latest book
+        // use that number to assign the number of the next book
+        $.each(currentBooks, (x) => {
+            if (currentBooks[x].id.match(/book[0-9]+/g)) {
+                let bookNumber = Number((/(?!book)[0-9]+/g).exec(currentBooks[x].id)[0]);
+                if (numberToAssign <= bookNumber) numberToAssign = bookNumber + 1;
+            }
+        });
+
+        btnSelect.click( () => {
+            bookContainer.css("border", "2px solid blue");
+        });
+        btnDeselect.click( () => {
+            bookContainer.css("border", "medium none");
+        });
+
+        bookContainer.attr('id', 'book' + numberToAssign);
+        bookContainer.append(
+                $(
+                        [titleP[0], authorP[0], isbnP[0], btnSelect[0], btnDeselect[0]]
+                )
+        );
+        bookContainer.appendTo(booksContainer);
+    }
+</script>
+
+</body>
+</html>

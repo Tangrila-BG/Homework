@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+            crossorigin="anonymous"></script>
+    <style>
+        #timer {
+            font-size: 5em;
+        }
+    </style>
+</head>
+<body>
+<div id="timer">
+    <span id="hours" class="timer">00</span>:
+    <span id="minutes" class="timer">00</span>:
+    <span id="seconds" class="timer">00</span>
+    <button id="start-timer">Start</button>
+    <button id="stop-timer">Stop</button>
+</div>
+<script>
+    window.onload = function(){
+        timer();
+    };
+
+    function timer() {
+        let startBtn = $('#start-timer');
+        let stopBtn = $('#stop-timer');
+        let time = 0;
+        let interval;
+        startBtn.click( () => {
+            interval = setInterval(updateTime, 1000);
+        });
+        stopBtn.click( () => {
+            if (time < 1) return;
+            clearInterval(interval);
+        });
+        function updateTime() {
+            time += 60;
+            $('#hours').text(("0" + Math.trunc(time * 0.000277778)).slice(-2));
+            $('#minutes').text(("0" + Math.trunc(time / 60) % 60).slice(-2));
+            $('#seconds').text(("0" + (time % 60)).slice(-2));
+        }
+    }
+</script>
+
+</body>
+</html>
