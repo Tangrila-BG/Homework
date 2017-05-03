@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+<body>
+<ul id="items">
+    <li>first item</li>
+    <li>second item</li>
+    <li>third item</li>
+</ul>
+<button onclick="extractText()">
+    Extract Text</button>
+<div id="result"></div>
+<script>
+    function extractText() {
+        return () => {
+            let liItems = $('#items li');
+            let listTexts = liItems.map(function () {
+                return $(this).text();
+            }).get();
+            let result = $('#result');
+            result.text(listTexts.join(", "));
+        }
+    }
+</script>
+</body>
+</html>
