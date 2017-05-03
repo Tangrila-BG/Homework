@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _11.StudentsJoinedToSpecialties
+namespace Csharp.Advanced.LINQ
 {
-    class Program
+    public partial class Linq
     {
-        static void Main(string[] args)
+        public static void _11StudentsJoinedToSpecialtiesWithoutClasses(string[] args)
         {
             List<string> info = new List<string>();
             while (true)

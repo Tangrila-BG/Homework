@@ -1,22 +1,15 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using OfficeOpenXml;
 using OfficeOpenXml.Table;
 
-namespace _14.ExportToExcel
+namespace Csharp.Advanced.LINQ
 {
-    class Program
+    public partial class Linq
     {
-        static void Main(string[] args)
+        public static void _14ExportToExcel(string[] args)
         {
-            // dependency
-            //  <? xml version = "1.0" encoding = "utf-8" ?>
-            //  <packages>
-            //      <package id = "EPPlus" version = "4.1.0" targetFramework = "net461" />
-            //  </packages>
-            
             // You will also need to download place the "StudentData.txt" to your desktop
             // in order to run this code successfully
 

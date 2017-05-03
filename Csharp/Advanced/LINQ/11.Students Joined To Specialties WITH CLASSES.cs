@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _11.StudentsJoinedToSpecialties
+namespace Csharp.Advanced.LINQ
 {
-    class Program
+    public partial class Linq
     {
-        static void Main(string[] args)
+        public static void _11StudentsJoinedToSpecialties(string[] args)
         {
             List<StudentSpecialty> specialties = new List<StudentSpecialty>();
             List<Student> students = new List<Student>();
@@ -42,14 +42,14 @@ namespace _11.StudentsJoinedToSpecialties
                 Console.WriteLine($"{result.Student} {result.FacNum} {result.SpecialtyName}");
 
         }
-        public class StudentSpecialty
+        private class StudentSpecialty
         {
             public string SpecialtyName { get; set; }
 
             public int FacultyNumber { get; set; }
         }
 
-        public class Student
+        private class Student
         {
             public string StudentName { get; set; }
             public int FacultyNumber { get; set; }

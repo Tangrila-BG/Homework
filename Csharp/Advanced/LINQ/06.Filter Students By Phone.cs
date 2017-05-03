@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _06.FilterStudentsByPhone
+namespace Csharp.Advanced.LINQ
 {
-    class Program
+    public partial class Linq
     {
-        static void Main(string[] args)
+        public static void _06FilterStudentsByPhone(string[] args)
         {
 
             List<string> students = new List<string>();

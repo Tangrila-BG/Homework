@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _13.OfficeStuff
+namespace Csharp.Advanced.LINQ
 {
-    class Program
+    public partial class Linq
     {
-        static void Main(string[] args)
+        public static void _13OfficeStuff(string[] args)
         {
             List<string> info = new List<string>();
             int t = int.Parse(Console.ReadLine());

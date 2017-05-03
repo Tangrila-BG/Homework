@@ -2,12 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-
-namespace _02.StudentsByFirstAndLastName
+namespace Csharp.Advanced.LINQ
 {
-    class Program
+    public partial class Linq
     {
-        static void Main(string[] args)
+        public static void _02StudentsByFirstAndLastName(string[] args)
         {
             List<string> students = new List<string>();
             while (true)
