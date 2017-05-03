@@ -64,14 +64,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Advanced\LINQ\00.CSharp-Advanced-LINQ-Exercises.docx" />
-    <None Include="Advanced\LINQ\00.PackagesCONFIG for 14.json" />
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Content Include="Advanced\LINQ\00.StudentData.txt" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
