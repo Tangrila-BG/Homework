@@ -12,12 +12,7 @@ namespace Csharp.Advanced.StacksAndQueues
         {
             public static void Solution()
             {
-                Stack<string> stack = new Stack<string>();
-
-                var input = Console.ReadLine().Split().ToList();
-                input.ForEach(x => stack.Push(x));
-
-                Console.WriteLine(string.Join(" ", stack.ToArray()));
+                Console.WriteLine(string.Join(" ", new Stack<string>(Console.ReadLine().Split())));
             }
         }
     }
