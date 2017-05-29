@@ -4,16 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Csharp.Advanced.LINQ;
+using Csharp.Advanced.ManualStringProcessing;
+using Csharp.Advanced.RegularExpressions;
 using Csharp.Advanced.SetsAndDictionaries;
+using Csharp.Advanced.SetsAndDictionaries.Lab;
 using Csharp.Advanced.StacksAndQueues;
-
 namespace Csharp
 {
     class Program
     {
         static void Main(string[] args)
         {
-            SetsAndDictionaries._16TargetPractice.Solution();
+            // Launch programs from here
+            RegularExpressions._07ValidUsernames.Solution();
         }
     }
 }
