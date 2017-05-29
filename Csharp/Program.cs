@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Csharp.Advanced.LINQ;
 using Csharp.Advanced.ManualStringProcessing;
+using Csharp.Advanced.RegularExpressions;
 using Csharp.Advanced.SetsAndDictionaries;
 using Csharp.Advanced.SetsAndDictionaries.Lab;
 using Csharp.Advanced.StacksAndQueues;
@@ -15,7 +16,7 @@ namespace Csharp
         static void Main(string[] args)
         {
             // Launch programs from here
-            ManualStringProcessing._16ExtractHyperlinks.Solution();
+            RegularExpressions._07ValidUsernames.Solution();
         }
     }
 }
