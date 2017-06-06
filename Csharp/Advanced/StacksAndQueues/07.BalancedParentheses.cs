@@ -12,7 +12,7 @@ namespace Csharp.Advanced.StacksAndQueues
         {
             public static void Solution()
             {
-                // "{, [, (, ), ], }
+                // {, [, (, ), ], }
                 var input = Console.ReadLine();
                 var stack = new Stack<char>();
 
@@ -27,28 +27,16 @@ namespace Csharp.Advanced.StacksAndQueues
                         case '{':
                             stack.Push(para);
                             break;
-
                         case '}':
-                            if (!stack.Any())
-                                flag = false;
-
-                            else if (stack.Pop() != '{')
+                            if (!stack.Any() || stack.Pop() != '{')
                                 flag = false;
                             break;
-
                         case ')':
-                            if (!stack.Any())
-                                flag = false;
-
-                            else if (stack.Pop() != '(')
+                            if (!stack.Any() || stack.Pop() != '(')
                                 flag = false;
                             break;
-
                         case ']':
-                            if (!stack.Any())
-                                flag = false;
-
-                            else if (stack.Pop() != '[')
+                            if (!stack.Any() || stack.Pop() != '[')
                                 flag = false;
                             break;
                     }
