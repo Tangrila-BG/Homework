@@ -77,6 +77,11 @@
     <Compile Include="Advanced\ManualStringProcessing\14.LettersChangeNumbers.cs" />
     <Compile Include="Advanced\ManualStringProcessing\15.MelrahShake.cs" />
     <Compile Include="Advanced\ManualStringProcessing\16.ExtractHyperlinks.cs" />
+    <Compile Include="Advanced\ManualStringProcessing\Lab\1.StudentsResults.cs" />
+    <Compile Include="Advanced\ManualStringProcessing\Lab\2.ParseURLs.cs" />
+    <Compile Include="Advanced\ManualStringProcessing\Lab\3.ParseTags.cs" />
+    <Compile Include="Advanced\ManualStringProcessing\Lab\4.SpecialWords.cs" />
+    <Compile Include="Advanced\ManualStringProcessing\Lab\5.ConcatenateStrings.cs" />
     <Compile Include="Advanced\RegularExpressions\01.MatchFullName.cs" />
     <Compile Include="Advanced\RegularExpressions\02.MatchPhoneNumber.cs" />
     <Compile Include="Advanced\RegularExpressions\03.SeriesOfNumbers.cs" />
