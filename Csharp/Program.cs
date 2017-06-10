@@ -17,7 +17,7 @@ namespace Csharp
         static void Main(string[] args)
         {
             // Launch programs from here
-            ManualStringProcessingLab._5ConcatenateStrings.Solution();
+            RegularExpressions._07ValidUsernames.Solution();
         }
     }
 }
