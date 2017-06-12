@@ -22,7 +22,7 @@ namespace Csharp.Advanced.RegularExpressions
                     if (input.ToLower() == "end")
                         break;
 
-                    Console.WriteLine(Regex.Replace(input, pattern, @"[URL$1]$3[/URL]"));
+                    Console.WriteLine(Regex.Replace(input, pattern, @"[URL$1]$4[/URL]"));
                 }
             }
         }

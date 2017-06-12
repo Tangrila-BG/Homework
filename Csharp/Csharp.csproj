@@ -89,6 +89,14 @@
     <Compile Include="Advanced\RegularExpressions\05.ExtractEmail.cs" />
     <Compile Include="Advanced\RegularExpressions\06.SentenceExtractor.cs" />
     <Compile Include="Advanced\RegularExpressions\07.ValidUsernames.cs" />
+    <Compile Include="Advanced\RegularExpressions\Lab\1.MatchCount.cs" />
+    <Compile Include="Advanced\RegularExpressions\Lab\2.VowelCount.cs" />
+    <Compile Include="Advanced\RegularExpressions\Lab\3.NonDigitCount.cs" />
+    <Compile Include="Advanced\RegularExpressions\Lab\4.ExtractIntegerNumbers.cs" />
+    <Compile Include="Advanced\RegularExpressions\Lab\5.ExtractTags.cs" />
+    <Compile Include="Advanced\RegularExpressions\Lab\6.ValidUsernames.cs" />
+    <Compile Include="Advanced\RegularExpressions\Lab\7.ValidTime.cs" />
+    <Compile Include="Advanced\RegularExpressions\Lab\8.ExtractQuotations.cs" />
     <Compile Include="Advanced\SetsAndDictionaries\01.UniqueUsernames.cs" />
     <Compile Include="Advanced\SetsAndDictionaries\02.SetsOfElements.cs" />
     <Compile Include="Advanced\SetsAndDictionaries\03.PeriodicTable.cs" />
