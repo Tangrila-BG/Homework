@@ -18,7 +18,7 @@ namespace Csharp
         static void Main(string[] args)
         {
             // Launch programs from here
-            RegularExpressionsLab._8ExtractQuotations.Solution();
+            RegularExpressions._09QueryMess.Solution();
         }
     }
 }
