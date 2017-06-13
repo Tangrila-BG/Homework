@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Advanced\FunctionalProgramming\Lab\1.SortEvenNumbers.cs" />
+    <Compile Include="Advanced\FunctionalProgramming\Lab\2.SumNumbers.cs" />
+    <Compile Include="Advanced\FunctionalProgramming\Lab\3.CountUppercaseWords.cs" />
+    <Compile Include="Advanced\FunctionalProgramming\Lab\4.AddVAT.cs" />
+    <Compile Include="Advanced\FunctionalProgramming\Lab\5.FilterByAge.cs" />
     <Compile Include="Advanced\LINQ\01.Students By Group.cs" />
     <Compile Include="Advanced\LINQ\02.Students By First And Last Name.cs" />
     <Compile Include="Advanced\LINQ\03.Students By Age.cs" />

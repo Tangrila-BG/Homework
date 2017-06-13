@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Csharp.Advanced.FunctionalProgramming.Lab;
 using Csharp.Advanced.LINQ;
 using Csharp.Advanced.ManualStringProcessing;
 using Csharp.Advanced.ManualStringProcessing.Lab;
@@ -17,7 +18,7 @@ namespace Csharp
         static void Main(string[] args)
         {
             // Launch programs from here
-            ManualStringProcessingLab._5ConcatenateStrings.Solution();
+            FunctionalProgrammingLab._5FilterByAge.Solution();
         }
     }
 }
