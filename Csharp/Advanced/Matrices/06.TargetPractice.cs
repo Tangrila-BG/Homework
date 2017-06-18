@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Csharp.Advanced.SetsAndDictionaries
+namespace Csharp.Advanced.Matrices
 {
-    public partial class SetsAndDictionaries
+    public partial class Matrices
     {
-        public class _16TargetPractice
+        public static class _06TargetPractice
         {
-            // TODO: Check if solution is valid
-
             public static void Solution()
             {
+                var separators = " ,\n\t".ToCharArray();
+
                 var rc = Console.ReadLine()
-                    .Split()
+                    .Split(separators, StringSplitOptions.RemoveEmptyEntries)
                     .Select(int.Parse)
                     .ToArray();
 
@@ -25,7 +25,7 @@ namespace Csharp.Advanced.SetsAndDictionaries
 
                 var snake = Console.ReadLine();
                 var shot = Console.ReadLine()
-                    .Split()
+                    .Split(separators, StringSplitOptions.RemoveEmptyEntries)
                     .Select(int.Parse)
                     .ToArray();
 
@@ -35,8 +35,9 @@ namespace Csharp.Advanced.SetsAndDictionaries
 
                 foreach (var row in matrix)
                 {
-                    Console.WriteLine(string.Join(" ", row));
+                    Console.WriteLine(string.Join("", row));
                 }
+
 
             }
 
@@ -49,9 +50,7 @@ namespace Csharp.Advanced.SetsAndDictionaries
                     for (int column = 0; column < width; column++)
                     {
                         if (matrix[row][column] != ' ')
-                        {
                             continue;
-                        }
 
                         int currentRow = row - 1;
                         while (currentRow >= 0)
@@ -116,10 +115,10 @@ namespace Csharp.Advanced.SetsAndDictionaries
                     if (remainder.Length > 0)
                     {
                         if (moveLeft)
-                            matrix[i] = (remainder + snake.Substring(0, cols - remainder.Length))
+                            matrix[i] = (remainder + snake.Substring(0, Math.Abs(cols - remainder.Length)))
                                 .ToArray();
                         else
-                            matrix[i] = (remainder + snake.Substring(0, cols - remainder.Length))
+                            matrix[i] = (remainder + snake.Substring(0, Math.Abs(cols - remainder.Length)))
                                 .Reverse()
                                 .ToArray();
 
@@ -127,7 +126,7 @@ namespace Csharp.Advanced.SetsAndDictionaries
                     }
 
                     if (hasRemainder)
-                        remainder.Append(snake.Substring(cols - temp));
+                        remainder.Append(snake.Substring(Math.Abs(cols - temp)));
 
                     moveLeft = !moveLeft;
 
@@ -136,6 +135,7 @@ namespace Csharp.Advanced.SetsAndDictionaries
                 }
 
             }
+
         }
     }
 }

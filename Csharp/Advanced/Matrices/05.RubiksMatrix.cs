@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Csharp.Advanced.SetsAndDictionaries
+namespace Csharp.Advanced.Matrices
 {
-    public partial class SetsAndDictionaries
+    public partial class Matrices
     {
-        public static class _15RubiksMatrix
+        public static class _05RubiksMatrix
         {
             public static void Solution()
             {
