@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Csharp.Advanced.FunctionalProgramming;
 using Csharp.Advanced.FunctionalProgramming.Lab;
 using Csharp.Advanced.LINQ;
+using Csharp.Advanced.LINQ.Lab;
 using Csharp.Advanced.ManualStringProcessing;
 using Csharp.Advanced.Matrices;
 using Csharp.Advanced.Matrices.Lab;
@@ -20,7 +21,7 @@ namespace Csharp
         static void Main(string[] args)
         {
             // Launch programs from here
-            FunctionalProgramming._11ThePartyReservationFilterModule.Solution();
+            LinqLab._8MapDistricts.Solution();
         }
     }
 }

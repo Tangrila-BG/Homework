@@ -77,6 +77,14 @@
     <Compile Include="Advanced\LINQ\12.Little John.cs" />
     <Compile Include="Advanced\LINQ\13.Office Stuff.cs" />
     <Compile Include="Advanced\LINQ\14.Export To Excel.cs" />
+    <Compile Include="Advanced\LINQ\Lab\1.TakeTwo.cs" />
+    <Compile Include="Advanced\LINQ\Lab\2.UpperStrings.cs" />
+    <Compile Include="Advanced\LINQ\Lab\3.FirstName.cs" />
+    <Compile Include="Advanced\LINQ\Lab\4.AverageOfDoubles.cs" />
+    <Compile Include="Advanced\LINQ\Lab\5.MinEvenNumber.cs" />
+    <Compile Include="Advanced\LINQ\Lab\6.FindAndSumIntegers.cs" />
+    <Compile Include="Advanced\LINQ\Lab\7.BoundedNumbers.cs" />
+    <Compile Include="Advanced\LINQ\Lab\8.MapDistricts.cs" />
     <Compile Include="Advanced\ManualStringProcessing\01.ReverseString.cs" />
     <Compile Include="Advanced\ManualStringProcessing\02.StringLength.cs" />
     <Compile Include="Advanced\ManualStringProcessing\03.FormattingNumbers.cs" />
