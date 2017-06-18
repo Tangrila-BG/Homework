@@ -46,6 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Advanced\FunctionalProgramming\01.ActionPrint.cs" />
+    <Compile Include="Advanced\FunctionalProgramming\02.KnightsOfHonor.cs" />
+    <Compile Include="Advanced\FunctionalProgramming\03.CustomMinFunction.cs" />
+    <Compile Include="Advanced\FunctionalProgramming\04.FindEvensOrOdds.cs" />
+    <Compile Include="Advanced\FunctionalProgramming\05.AppliedArithmetics.cs" />
+    <Compile Include="Advanced\FunctionalProgramming\06.ReverseAndExclude.cs" />
+    <Compile Include="Advanced\FunctionalProgramming\07.PredicateForNames.cs" />
+    <Compile Include="Advanced\FunctionalProgramming\08.CustomComparator.cs" />
+    <Compile Include="Advanced\FunctionalProgramming\09.ListOfPredicates.cs" />
+    <Compile Include="Advanced\FunctionalProgramming\10.PredicateParty.cs" />
+    <Compile Include="Advanced\FunctionalProgramming\11.ThePartyReservationFilterModule.cs" />
     <Compile Include="Advanced\FunctionalProgramming\Lab\1.SortEvenNumbers.cs" />
     <Compile Include="Advanced\FunctionalProgramming\Lab\2.SumNumbers.cs" />
     <Compile Include="Advanced\FunctionalProgramming\Lab\3.CountUppercaseWords.cs" />
