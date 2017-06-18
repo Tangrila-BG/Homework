@@ -21,7 +21,7 @@ namespace Csharp
         static void Main(string[] args)
         {
             // Launch programs from here
-            LinqLab._8MapDistricts.Solution();
+            Linq._13OfficeStuff("".Split());
         }
     }
 }
