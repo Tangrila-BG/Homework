@@ -9,20 +9,21 @@ namespace Csharp.Advanced.RegularExpressions
 {
     public partial class RegularExpressions
     {
-        public static class _04ReplaceATag
+        public static class _08ExtractHyperlinks
         {
             public static void Solution()
             {
-                var pattern = @"<a(.*href(\s+)?=(.|\n)*?(?=>))>((.|\n)*?(?=<))<\/a>";
+                var pattern = @"<a([^>]*?)href\s*=\s*(""|')(.+?)\2";
 
                 while (true)
                 {
                     var input = Console.ReadLine();
 
-                    if (input.ToLower() == "end")
-                        break;
+                    if (input == "END") break;
 
-                    Console.WriteLine(Regex.Replace(input, pattern, @"[URL$1]$4[/URL]"));
+                    foreach (Match match in Regex.Matches(input, pattern))
+                        Console.WriteLine(match.Groups[3]);
+
                 }
             }
         }

@@ -11,6 +11,7 @@ using Csharp.Advanced.ManualStringProcessing;
 using Csharp.Advanced.Matrices;
 using Csharp.Advanced.Matrices.Lab;
 using Csharp.Advanced.RegularExpressions;
+using Csharp.Advanced.RegularExpressions.Lab;
 using Csharp.Advanced.SetsAndDictionaries;
 using Csharp.Advanced.SetsAndDictionaries.Lab;
 using Csharp.Advanced.StacksAndQueues;
@@ -21,7 +22,7 @@ namespace Csharp
         static void Main(string[] args)
         {
             // Launch programs from here
-            Linq._13OfficeStuff("".Split());
+            RegularExpressions._09QueryMess.Solution();
         }
     }
 }
