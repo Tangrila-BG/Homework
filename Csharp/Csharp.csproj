@@ -162,15 +162,25 @@
     <Compile Include="Advanced\StacksAndQueues\09.StackFibonacci.cs" />
     <Compile Include="Advanced\StacksAndQueues\10.SimpleTextEditor.cs" />
     <Compile Include="Advanced\StacksAndQueues\11.PoisonousPlants.cs" />
+    <Compile Include="OOP\Basics\DefiningClasses\01.DefineAClassPerson.cs" />
+    <Compile Include="OOP\Basics\DefiningClasses\02.CreatingConstructors.cs" />
+    <Compile Include="OOP\Basics\DefiningClasses\03.OpinionPoll.cs" />
+    <Compile Include="OOP\Basics\DefiningClasses\04.CompanyRoster.cs" />
+    <Compile Include="OOP\Basics\DefiningClasses\05.SpeedRacing.cs" />
+    <Compile Include="OOP\Basics\DefiningClasses\06.RawData.cs" />
+    <Compile Include="OOP\Basics\DefiningClasses\07.CarSalesman.cs" />
+    <Compile Include="OOP\Basics\DefiningClasses\09.Google.cs" />
+    <Compile Include="OOP\Basics\DefiningClasses\10.FamilyTree.cs" />
+    <Compile Include="OOP\Basics\DefiningClasses\11.CatLady.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Compile Include="OOP\Basics\DefiningClasses\08.PokemonTrainer.cs" />
+    <None Include="OOP\Basics\DefiningClasses\01. CSharp-OOP-Basics-Defining-Classes-Exercises.docx" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="OOP\Basics\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
