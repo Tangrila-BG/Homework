@@ -15,6 +15,9 @@ using Csharp.Advanced.RegularExpressions.Lab;
 using Csharp.Advanced.SetsAndDictionaries;
 using Csharp.Advanced.SetsAndDictionaries.Lab;
 using Csharp.Advanced.StacksAndQueues;
+using Csharp.OOP.Basics.Encapsulation._5.PizzaCalories;
+using Csharp.OOP.Basics.Encapsulation._6.FootballTeamGenerator;
+
 namespace Csharp
 {
     class Program
@@ -22,7 +25,7 @@ namespace Csharp
         static void Main(string[] args)
         {
             // Launch programs from here
-            OOP.Basics.DefiningClasses.DefiningClasses._10FamilyTree.Solution();
+            _6FootballTeamGenerator.Solution();
         }
     }
 }

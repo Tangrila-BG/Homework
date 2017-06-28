@@ -172,6 +172,23 @@
     <Compile Include="OOP\Basics\DefiningClasses\09.Google.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\10.FamilyTree.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\11.CatLady.cs" />
+    <Compile Include="OOP\Basics\Encapsulation\1.ClassBox\Box.cs" />
+    <Compile Include="OOP\Basics\Encapsulation\2.ClassBoxDataValidation\2.ClassBoxDataValidation.cs" />
+    <Compile Include="OOP\Basics\Encapsulation\2.ClassBoxDataValidation\Box.cs" />
+    <Compile Include="OOP\Basics\Encapsulation\3.AnimalFarm\3.AnimalFarm.cs" />
+    <Compile Include="OOP\Basics\Encapsulation\3.AnimalFarm\Chicken.cs" />
+    <Compile Include="OOP\Basics\Encapsulation\4.ShoppingSpree\4.ShoppingSpree.cs" />
+    <Compile Include="OOP\Basics\Encapsulation\4.ShoppingSpree\Person.cs" />
+    <Compile Include="OOP\Basics\Encapsulation\4.ShoppingSpree\Product.cs" />
+    <Compile Include="OOP\Basics\Encapsulation\5.PizzaCalories\5.PizzaCalories.cs" />
+    <Compile Include="OOP\Basics\Encapsulation\5.PizzaCalories\Dough.cs" />
+    <Compile Include="OOP\Basics\Encapsulation\5.PizzaCalories\Ingredient.cs" />
+    <Compile Include="OOP\Basics\Encapsulation\5.PizzaCalories\Pizza.cs" />
+    <Compile Include="OOP\Basics\Encapsulation\5.PizzaCalories\Topping.cs" />
+    <Compile Include="OOP\Basics\Encapsulation\6.FootballTeamGenerator\6.FootballTeamGenerator.cs" />
+    <Compile Include="OOP\Basics\Encapsulation\6.FootballTeamGenerator\Player.cs" />
+    <Compile Include="OOP\Basics\Encapsulation\6.FootballTeamGenerator\Skill.cs" />
+    <Compile Include="OOP\Basics\Encapsulation\6.FootballTeamGenerator\Team.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -179,6 +196,8 @@
     <None Include="App.config" />
     <Compile Include="OOP\Basics\DefiningClasses\08.PokemonTrainer.cs" />
     <None Include="OOP\Basics\DefiningClasses\01. CSharp-OOP-Basics-Defining-Classes-Exercises.docx" />
+    <Compile Include="OOP\Basics\Encapsulation\1.ClassBox\1.ClassBox.cs" />
+    <None Include="OOP\Basics\Encapsulation\CSharp-OOP-Basics-Encapsulation-Exercises.docx" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
