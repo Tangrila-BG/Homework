@@ -13,7 +13,6 @@ namespace Csharp.OOP.Basics.Encapsulation._6.FootballTeamGenerator
             var teams = new HashSet<Team>();
 
             string teamName;
-            Team team;
 
             while (true)
             {
@@ -23,14 +22,15 @@ namespace Csharp.OOP.Basics.Encapsulation._6.FootballTeamGenerator
                     break;
 
                 teamName = input[1];
-                team = teams.FirstOrDefault(x => x.Name.Equals(teamName));
-
-                if (team == null)
-                    throw new ArgumentException($"Team {teamName} does not exist.");
+                var team = teams.FirstOrDefault(x => x.Name.Equals(teamName));
 
                 try
                 {
                     string playerName;
+
+                    if (!input[0].Equals("team", StringComparison.OrdinalIgnoreCase))
+                        if (team == null)
+                            throw new ArgumentException($"Team {teamName} does not exist.");
 
                     if (input[0].Equals("add", StringComparison.OrdinalIgnoreCase))
                     {
