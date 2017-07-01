@@ -15,8 +15,11 @@ using Csharp.Advanced.RegularExpressions.Lab;
 using Csharp.Advanced.SetsAndDictionaries;
 using Csharp.Advanced.SetsAndDictionaries.Lab;
 using Csharp.Advanced.StacksAndQueues;
-using Csharp.OOP.Basics.Encapsulation._5.PizzaCalories;
-using Csharp.OOP.Basics.Encapsulation._6.FootballTeamGenerator;
+using Csharp.OOP.Basics.Inheritance._1.Person;
+using Csharp.OOP.Basics.Inheritance._3.Mankind;
+using Csharp.OOP.Basics.Inheritance._4.MordorCrueltyPlan;
+using Csharp.OOP.Basics.Inheritance._5.OnlineRadioDatabase;
+using Csharp.OOP.Basics.Inheritance._6.Animals;
 
 namespace Csharp
 {
@@ -25,7 +28,7 @@ namespace Csharp
         static void Main(string[] args)
         {
             // Launch programs from here
-            _6FootballTeamGenerator.Solution();
+            _6Animals.Solution();
         }
     }
 }

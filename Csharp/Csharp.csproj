@@ -207,6 +207,12 @@
     <Compile Include="OOP\Basics\DefiningClasses\15.DrawingTool\Figure.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\15.DrawingTool\Rectangle.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\15.DrawingTool\Square.cs" />
+    <Compile Include="OOP\Basics\Inheritance\1.Person\1.Person.cs" />
+    <Compile Include="OOP\Basics\Inheritance\2.BookShop\2.BookShop.cs" />
+    <Compile Include="OOP\Basics\Inheritance\3.Mankind\3.Mankind.cs" />
+    <Compile Include="OOP\Basics\Inheritance\4.MordorCrueltyPlan\4.MordorCrueltyPlan.cs" />
+    <Compile Include="OOP\Basics\Inheritance\5.OnlineRadioDatabase\5.OnlineRadioDatabase.cs" />
+    <Compile Include="OOP\Basics\Inheritance\6.Animals\6.Animals.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
