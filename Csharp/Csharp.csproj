@@ -207,6 +207,9 @@
     <Compile Include="OOP\Basics\DefiningClasses\15.DrawingTool\Figure.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\15.DrawingTool\Rectangle.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\15.DrawingTool\Square.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\1.Vehicles\1.Vehicles.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\2.VehiclesExtension\2.VehiclesExtension.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\3.WildFarm\3.WildFarm.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
