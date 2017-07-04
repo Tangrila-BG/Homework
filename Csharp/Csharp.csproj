@@ -208,11 +208,49 @@
     <Compile Include="OOP\Basics\DefiningClasses\15.DrawingTool\Rectangle.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\15.DrawingTool\Square.cs" />
     <Compile Include="OOP\Basics\Inheritance\1.Person\1.Person.cs" />
+    <Compile Include="OOP\Basics\Inheritance\1.Person\Child.cs" />
+    <Compile Include="OOP\Basics\Inheritance\1.Person\Person.cs" />
     <Compile Include="OOP\Basics\Inheritance\2.BookShop\2.BookShop.cs" />
+    <Compile Include="OOP\Basics\Inheritance\2.BookShop\Book.cs" />
+    <Compile Include="OOP\Basics\Inheritance\2.BookShop\GoldenEditionBook.cs" />
     <Compile Include="OOP\Basics\Inheritance\3.Mankind\3.Mankind.cs" />
+    <Compile Include="OOP\Basics\Inheritance\3.Mankind\Human.cs" />
+    <Compile Include="OOP\Basics\Inheritance\3.Mankind\Student.cs" />
+    <Compile Include="OOP\Basics\Inheritance\3.Mankind\Worker.cs" />
     <Compile Include="OOP\Basics\Inheritance\4.MordorCrueltyPlan\4.MordorCrueltyPlan.cs" />
+    <Compile Include="OOP\Basics\Inheritance\4.MordorCrueltyPlan\Moods\Angry.cs" />
+    <Compile Include="OOP\Basics\Inheritance\4.MordorCrueltyPlan\Foods\Apple.cs" />
+    <Compile Include="OOP\Basics\Inheritance\4.MordorCrueltyPlan\Foods\Cram.cs" />
+    <Compile Include="OOP\Basics\Inheritance\4.MordorCrueltyPlan\Foods\Food.cs" />
+    <Compile Include="OOP\Basics\Inheritance\4.MordorCrueltyPlan\FoodFactory.cs" />
+    <Compile Include="OOP\Basics\Inheritance\4.MordorCrueltyPlan\Gandalf.cs" />
+    <Compile Include="OOP\Basics\Inheritance\4.MordorCrueltyPlan\Moods\Happy.cs" />
+    <Compile Include="OOP\Basics\Inheritance\4.MordorCrueltyPlan\Foods\HoneyCake.cs" />
+    <Compile Include="OOP\Basics\Inheritance\4.MordorCrueltyPlan\Moods\JavaScript.cs" />
+    <Compile Include="OOP\Basics\Inheritance\4.MordorCrueltyPlan\Foods\Lembas.cs" />
+    <Compile Include="OOP\Basics\Inheritance\4.MordorCrueltyPlan\Foods\Melon.cs" />
+    <Compile Include="OOP\Basics\Inheritance\4.MordorCrueltyPlan\Mood.cs" />
+    <Compile Include="OOP\Basics\Inheritance\4.MordorCrueltyPlan\MoodFactory.cs" />
+    <Compile Include="OOP\Basics\Inheritance\4.MordorCrueltyPlan\Foods\Mushrooms.cs" />
+    <Compile Include="OOP\Basics\Inheritance\4.MordorCrueltyPlan\Moods\Sad.cs" />
+    <Compile Include="OOP\Basics\Inheritance\4.MordorCrueltyPlan\Foods\UnknownFood.cs" />
     <Compile Include="OOP\Basics\Inheritance\5.OnlineRadioDatabase\5.OnlineRadioDatabase.cs" />
+    <Compile Include="OOP\Basics\Inheritance\5.OnlineRadioDatabase\Exceptions\InvalidArtistNameException.cs" />
+    <Compile Include="OOP\Basics\Inheritance\5.OnlineRadioDatabase\Exceptions\InvalidSongException.cs" />
+    <Compile Include="OOP\Basics\Inheritance\5.OnlineRadioDatabase\Exceptions\InvalidSongLengthException.cs" />
+    <Compile Include="OOP\Basics\Inheritance\5.OnlineRadioDatabase\Exceptions\InvalidSongMinutesException.cs" />
+    <Compile Include="OOP\Basics\Inheritance\5.OnlineRadioDatabase\Exceptions\InvalidSongNameException.cs" />
+    <Compile Include="OOP\Basics\Inheritance\5.OnlineRadioDatabase\Exceptions\InvalidSongSecondsException.cs" />
+    <Compile Include="OOP\Basics\Inheritance\5.OnlineRadioDatabase\Exceptions\RadioException.cs" />
+    <Compile Include="OOP\Basics\Inheritance\5.OnlineRadioDatabase\RadioStation.cs" />
+    <Compile Include="OOP\Basics\Inheritance\5.OnlineRadioDatabase\Song.cs" />
     <Compile Include="OOP\Basics\Inheritance\6.Animals\6.Animals.cs" />
+    <Compile Include="OOP\Basics\Inheritance\6.Animals\Animal.cs" />
+    <Compile Include="OOP\Basics\Inheritance\6.Animals\Cat.cs" />
+    <Compile Include="OOP\Basics\Inheritance\6.Animals\Dog.cs" />
+    <Compile Include="OOP\Basics\Inheritance\6.Animals\Frog.cs" />
+    <Compile Include="OOP\Basics\Inheritance\6.Animals\Kitten.cs" />
+    <Compile Include="OOP\Basics\Inheritance\6.Animals\Tomcat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -222,6 +260,7 @@
     <None Include="OOP\Basics\DefiningClasses\01. CSharp-OOP-Basics-Defining-Classes-Exercises.docx" />
     <Compile Include="OOP\Basics\DefiningClasses\03.OldestFamilyMember\03.OldestFamilyMember.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\09.RectangleIntersection\09.RectangleIntersection.cs" />
+    <None Include="OOP\Basics\Inheritance\03.CSharp-OOP-Basics-Inheritance-Exercises.docx" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
