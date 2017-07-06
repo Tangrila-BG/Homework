@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Csharp.OOP.Basics.Polymorphism._1.Vehicles
 {
-    public static class _1Vehicles
+    public static partial class _1Vehicles
     {
         public static void Solution()
         {
@@ -63,84 +63,6 @@ namespace Csharp.OOP.Basics.Polymorphism._1.Vehicles
             }
 
             Console.WriteLine($"{senderName} travelled {args.Distance} km");
-        }
-
-        class VehicleEventArgs : EventArgs
-        {
-            public double Distance { get; }
-            public bool NeedRefuel { get; }
-
-            public VehicleEventArgs(double distance, bool needRefuel)
-            {
-                this.Distance = distance;
-                this.NeedRefuel = needRefuel;
-            }
-        }
-
-        abstract class Vehicle
-        {
-            public event EventHandler OnDriving;
-
-            private double FuelQuantity { get; set; }
-            public virtual double FuelConsumptionPerKm { get; set; }
-
-            public void Drive(double distance)
-            {
-                var cost = this.FuelConsumptionPerKm * distance;
-                var needRefuel = cost > this.FuelQuantity;
-
-                OnDriving(this, new VehicleEventArgs(distance, needRefuel));
-
-                if (!needRefuel)
-                    this.FuelQuantity -= cost;
-            }
-
-            public virtual void Refuel(double liters)
-            {
-                this.FuelQuantity += liters;
-            }
-
-            public override string ToString()
-            {
-                return $"{this.GetType().Name}: {this.FuelQuantity:F2}";
-            }
-
-            protected Vehicle(double fuelQuantity, double litersPerKm)
-            {
-                this.FuelQuantity = fuelQuantity;
-                this.FuelConsumptionPerKm = litersPerKm;
-            }
-        }
-
-        class Car : Vehicle
-        {
-            public override double FuelConsumptionPerKm
-            {
-                get { return base.FuelConsumptionPerKm; }
-                set { base.FuelConsumptionPerKm += value + 0.9; }
-            }
-
-            public Car(double fuelQuantity, double litersPerKm) : base(fuelQuantity, litersPerKm)
-            {
-            }
-        }
-
-        class Truck : Vehicle
-        {
-            public override double FuelConsumptionPerKm
-            {
-                get { return base.FuelConsumptionPerKm; }
-                set { base.FuelConsumptionPerKm += value + 1.6; }
-            }
-
-            public override void Refuel(double liters)
-            {
-                base.Refuel(liters * 0.95);
-            }
-
-            public Truck(double fuelQuantity, double litersPerKm) : base(fuelQuantity, litersPerKm)
-            {
-            }
         }
     }
 }
