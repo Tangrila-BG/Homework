@@ -15,11 +15,9 @@ using Csharp.Advanced.RegularExpressions.Lab;
 using Csharp.Advanced.SetsAndDictionaries;
 using Csharp.Advanced.SetsAndDictionaries.Lab;
 using Csharp.Advanced.StacksAndQueues;
-using Csharp.OOP.Basics.Inheritance._1.Person;
-using Csharp.OOP.Basics.Inheritance._3.Mankind;
-using Csharp.OOP.Basics.Inheritance._4.MordorCrueltyPlan;
-using Csharp.OOP.Basics.Inheritance._5.OnlineRadioDatabase;
-using Csharp.OOP.Basics.Inheritance._6.Animals;
+using Csharp.OOP.Basics.Polymorphism._1.Vehicles;
+using Csharp.OOP.Basics.Polymorphism._2.VehiclesExtension;
+using Csharp.OOP.Basics.Polymorphism._3.WildFarm;
 
 namespace Csharp
 {
@@ -28,7 +26,7 @@ namespace Csharp
         static void Main(string[] args)
         {
             // Launch programs from here
-            _6Animals.Solution();
+            _3WildFarm.Solution();
         }
     }
 }

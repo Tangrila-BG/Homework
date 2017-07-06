@@ -269,6 +269,28 @@
     <Compile Include="OOP\Basics\Inheritance\6.Animals\Frog.cs" />
     <Compile Include="OOP\Basics\Inheritance\6.Animals\Kitten.cs" />
     <Compile Include="OOP\Basics\Inheritance\6.Animals\Tomcat.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\1.Vehicles\1.Vehicles.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\1.Vehicles\Car.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\1.Vehicles\Truck.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\1.Vehicles\Vehicle.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\1.Vehicles\VehicleEventArgs.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\2.VehiclesExtension\2.VehiclesExtension.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\2.VehiclesExtension\Bus.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\2.VehiclesExtension\Car.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\2.VehiclesExtension\Truck.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\2.VehiclesExtension\Vehicle.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\2.VehiclesExtension\VehicleEventArgs.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\3.WildFarm\3.WildFarm.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\3.WildFarm\Animal.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\3.WildFarm\Cat.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\3.WildFarm\Feline.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\3.WildFarm\Food.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\3.WildFarm\Mammal.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\3.WildFarm\Meat.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\3.WildFarm\Mouse.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\3.WildFarm\Tiger.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\3.WildFarm\Vegetable.cs" />
+    <Compile Include="OOP\Basics\Polymorphism\3.WildFarm\Zebra.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -278,6 +300,7 @@
     <None Include="OOP\Basics\DefiningClasses\01. CSharp-OOP-Basics-Defining-Classes-Exercises.docx" />
     <Compile Include="OOP\Basics\DefiningClasses\03.OldestFamilyMember\03.OldestFamilyMember.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\09.RectangleIntersection\09.RectangleIntersection.cs" />
+    <None Include="OOP\Basics\Polymorphism\06. CSharp-OOP-Basics-Polymorphism-Exercises.docx" />
     <None Include="OOP\Basics\Encapsulation\CSharp-OOP-Basics-Encapsulation-Exercises.docx" />
     <None Include="OOP\Basics\Inheritance\03.CSharp-OOP-Basics-Inheritance-Exercises.docx" />
     <None Include="packages.config" />
