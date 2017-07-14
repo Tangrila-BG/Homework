@@ -4,9 +4,9 @@ namespace Csharp.OOP.Basics.ExamPrep.SystemSplit
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Solution(string[] args)
         {
-            var system = new Csharp.OOP.Basics.ExamPrep.SystemSplit.System();
+            var system = new System();
            
             while (true)
             {

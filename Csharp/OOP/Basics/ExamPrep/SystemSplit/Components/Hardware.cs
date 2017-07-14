@@ -19,10 +19,10 @@ namespace Csharp.OOP.Basics.ExamPrep.SystemSplit.Components
 
         public void AddSoftware(Software software)
         {
-            if (software.CapacityConsumption > this.UsedCapacity + this.MaximumCapacity)
+            if (software.CapacityConsumption > this.MaximumCapacity - this.UsedCapacity)
                 throw new ArgumentException("Insufficient hardware capacity");
 
-            if (software.MemoryConsumption > this.UsedMemory + this.MaximumMemory)
+            if (software.MemoryConsumption > this.MaximumMemory - this.UsedMemory)
                 throw new ArgumentException("Insufficient hardware memory");
 
             this.UsedCapacity += software.CapacityConsumption;
