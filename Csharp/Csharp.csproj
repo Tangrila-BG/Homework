@@ -162,6 +162,13 @@
     <Compile Include="Advanced\StacksAndQueues\09.StackFibonacci.cs" />
     <Compile Include="Advanced\StacksAndQueues\10.SimpleTextEditor.cs" />
     <Compile Include="Advanced\StacksAndQueues\11.PoisonousPlants.cs" />
+    <Compile Include="Algorithms\Recursion\Lab\1RecursiveArraySum.cs" />
+    <Compile Include="Algorithms\Recursion\Lab\2RecursiveFactorial.cs" />
+    <Compile Include="Algorithms\Recursion\Lab\3RecursiveDrawing.cs" />
+    <Compile Include="Algorithms\Recursion\Lab\4Generating01Vectors.cs" />
+    <Compile Include="Algorithms\Recursion\Lab\5GeneratingCombinations.cs" />
+    <Compile Include="Algorithms\Recursion\Lab\68QueensPuzzle.cs" />
+    <Compile Include="Algorithms\Recursion\Lab\7PathsInLabyrinth.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\01.DefineAClassPerson\01.DefineAClassPerson.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\01.DefineAClassPerson\Person.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\02.CreatingConstructors\02.CreatingConstructors.cs" />
@@ -321,8 +328,6 @@
     <None Include="OOP\Basics\Inheritance\03.CSharp-OOP-Basics-Inheritance-Exercises.docx" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Algorithms\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

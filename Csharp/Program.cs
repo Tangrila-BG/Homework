@@ -15,6 +15,7 @@ using Csharp.Advanced.RegularExpressions.Lab;
 using Csharp.Advanced.SetsAndDictionaries;
 using Csharp.Advanced.SetsAndDictionaries.Lab;
 using Csharp.Advanced.StacksAndQueues;
+using Csharp.Algorithms.Recursion.Lab;
 using Csharp.OOP.Basics.Polymorphism._1.Vehicles;
 using Csharp.OOP.Basics.Polymorphism._2.VehiclesExtension;
 using Csharp.OOP.Basics.Polymorphism._3.WildFarm;
@@ -26,7 +27,7 @@ namespace Csharp
         static void Main(string[] args)
         {
             // Launch programs from here
-            _3WildFarm.Solution();
+            _7PathsInLabyrinth.Solution();
         }
     }
 }
