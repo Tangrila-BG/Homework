@@ -321,6 +321,8 @@
     <None Include="OOP\Basics\Inheritance\03.CSharp-OOP-Basics-Inheritance-Exercises.docx" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="OOP\Advanced\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
