@@ -15,6 +15,14 @@ using Csharp.Advanced.RegularExpressions.Lab;
 using Csharp.Advanced.SetsAndDictionaries;
 using Csharp.Advanced.SetsAndDictionaries.Lab;
 using Csharp.Advanced.StacksAndQueues;
+using Csharp.OOP.Advanced.InterfacesAndAbstraction._1DefineIPerson;
+using Csharp.OOP.Advanced.InterfacesAndAbstraction._2MultipleImplementation;
+using Csharp.OOP.Advanced.InterfacesAndAbstraction._3Ferrari;
+using Csharp.OOP.Advanced.InterfacesAndAbstraction._4Telephony;
+using Csharp.OOP.Advanced.InterfacesAndAbstraction._5BorderControl;
+using Csharp.OOP.Advanced.InterfacesAndAbstraction._6BirthdayCelebrations;
+using Csharp.OOP.Advanced.InterfacesAndAbstraction._7FoodShortage;
+using Csharp.OOP.Advanced.InterfacesAndAbstraction._8MilitaryElite;
 using Csharp.OOP.Basics.Polymorphism._1.Vehicles;
 using Csharp.OOP.Basics.Polymorphism._2.VehiclesExtension;
 using Csharp.OOP.Basics.Polymorphism._3.WildFarm;
@@ -26,7 +34,7 @@ namespace Csharp
         static void Main(string[] args)
         {
             // Launch programs from here
-            _3WildFarm.Solution();
+            _8MilitaryElite.Solution();
         }
     }
 }

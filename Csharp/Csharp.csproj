@@ -162,6 +162,58 @@
     <Compile Include="Advanced\StacksAndQueues\09.StackFibonacci.cs" />
     <Compile Include="Advanced\StacksAndQueues\10.SimpleTextEditor.cs" />
     <Compile Include="Advanced\StacksAndQueues\11.PoisonousPlants.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\1DefineIPerson\1DefineIPerson.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\1DefineIPerson\Citizen.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\1DefineIPerson\IPerson.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\2MultipleImplementation\2MultipleImplementation.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\2MultipleImplementation\Citizen.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\2MultipleImplementation\IBirthable.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\2MultipleImplementation\IIdentifiable.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\2MultipleImplementation\IPerson.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\3Ferrari\3Ferrari.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\3Ferrari\Ferrari.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\3Ferrari\ICar.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\4Telephony\4Telephony.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\4Telephony\IBrowsable.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\4Telephony\ICallable.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\4Telephony\Smartphone.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\5BorderControl\5BorderControl.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\5BorderControl\Citizen.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\5BorderControl\IIdentifiable.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\5BorderControl\Robot.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\6BirthdayCelebrations\6BirthdayCelebrations.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\6BirthdayCelebrations\Citizen.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\6BirthdayCelebrations\IBirthable.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\6BirthdayCelebrations\IIdentifiable.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\6BirthdayCelebrations\Pet.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\7FoodShortage\7FoodShortage.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\7FoodShortage\Citizen.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\7FoodShortage\IBirthable.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\7FoodShortage\IBuyer.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\7FoodShortage\IDescribable.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\7FoodShortage\IIdentifiable.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\7FoodShortage\Rebel.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\8MilitaryElite.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Models\Commando.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Enums\Corps.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Models\Engineer.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Helper.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Interfaces\IAuxiliary.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Interfaces\ICommando.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Interfaces\IEngineer.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Interfaces\ILuetenantGeneral.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Interfaces\IPrivate.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Interfaces\ISoldier.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Interfaces\ISpecialisedSoldier.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Interfaces\ISpy.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Models\LuetenantGeneral.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Models\Mission.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Enums\MissionState.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Models\Private.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Models\Repair.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Models\Soldier.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Models\SpecialisedSoldier.cs" />
+    <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Models\Spy.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\01.DefineAClassPerson\01.DefineAClassPerson.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\01.DefineAClassPerson\Person.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\02.CreatingConstructors\02.CreatingConstructors.cs" />
@@ -313,6 +365,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <Compile Include="OOP\Basics\DefiningClasses\11.PokemonTrainer\11.PokemonTrainer.cs" />
+    <None Include="OOP\Advanced\InterfacesAndAbstraction\01. CSharp-OOP-Advanced-Interfaces-And-Abstraction-Exercises.docx" />
     <None Include="OOP\Basics\DefiningClasses\01. CSharp-OOP-Basics-Defining-Classes-Exercises.docx" />
     <Compile Include="OOP\Basics\DefiningClasses\03.OldestFamilyMember\03.OldestFamilyMember.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\09.RectangleIntersection\09.RectangleIntersection.cs" />
@@ -321,8 +374,6 @@
     <None Include="OOP\Basics\Inheritance\03.CSharp-OOP-Basics-Inheritance-Exercises.docx" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="OOP\Advanced\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
