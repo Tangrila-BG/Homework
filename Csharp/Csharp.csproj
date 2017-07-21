@@ -162,6 +162,26 @@
     <Compile Include="Advanced\StacksAndQueues\09.StackFibonacci.cs" />
     <Compile Include="Advanced\StacksAndQueues\10.SimpleTextEditor.cs" />
     <Compile Include="Advanced\StacksAndQueues\11.PoisonousPlants.cs" />
+    <Compile Include="OOP\Advanced\Generics\01GenericBoxOfString\01GenericBoxOfString.cs" />
+    <Compile Include="OOP\Advanced\Generics\01GenericBoxOfString\Box.cs" />
+    <Compile Include="OOP\Advanced\Generics\02GenericBoxOfInteger\02GenericBoxOfInteger.cs" />
+    <Compile Include="OOP\Advanced\Generics\02GenericBoxOfInteger\Box.cs" />
+    <Compile Include="OOP\Advanced\Generics\03GenericSwapMethodStrings\03GenericSwapMethodStrings.cs" />
+    <Compile Include="OOP\Advanced\Generics\03GenericSwapMethodStrings\Box.cs" />
+    <Compile Include="OOP\Advanced\Generics\04GenericSwapMethodIntegers\04GenericSwapMethodIntegers.cs" />
+    <Compile Include="OOP\Advanced\Generics\04GenericSwapMethodIntegers\Box.cs" />
+    <Compile Include="OOP\Advanced\Generics\05GenericCountMethodStrings\05GenericCountMethodStrings.cs" />
+    <Compile Include="OOP\Advanced\Generics\05GenericCountMethodStrings\Box.cs" />
+    <Compile Include="OOP\Advanced\Generics\06GenericCountMethodDouble\06GenericCountMethodDouble.cs" />
+    <Compile Include="OOP\Advanced\Generics\06GenericCountMethodDouble\Box.cs" />
+    <Compile Include="OOP\Advanced\Generics\070809CustomList\_070809CustomList.cs" />
+    <Compile Include="OOP\Advanced\Generics\070809CustomList\CustomList.cs" />
+    <Compile Include="OOP\Advanced\Generics\070809CustomList\ICustomList.cs" />
+    <Compile Include="OOP\Advanced\Generics\070809CustomList\Sorter.cs" />
+    <Compile Include="OOP\Advanced\Generics\10Tuple\10Tuple.cs" />
+    <Compile Include="OOP\Advanced\Generics\10Tuple\Tuple.cs" />
+    <Compile Include="OOP\Advanced\Generics\11Threeuple\11Threeuple.cs" />
+    <Compile Include="OOP\Advanced\Generics\11Threeuple\Threeuple.cs" />
     <Compile Include="OOP\Advanced\InterfacesAndAbstraction\1DefineIPerson\1DefineIPerson.cs" />
     <Compile Include="OOP\Advanced\InterfacesAndAbstraction\1DefineIPerson\Citizen.cs" />
     <Compile Include="OOP\Advanced\InterfacesAndAbstraction\1DefineIPerson\IPerson.cs" />
@@ -365,6 +385,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <Compile Include="OOP\Basics\DefiningClasses\11.PokemonTrainer\11.PokemonTrainer.cs" />
+    <None Include="OOP\Advanced\Generics\02. CSharp-OOP-Advanced-Generics-Exercises.docx" />
     <None Include="OOP\Advanced\InterfacesAndAbstraction\01. CSharp-OOP-Advanced-Interfaces-And-Abstraction-Exercises.docx" />
     <None Include="OOP\Basics\DefiningClasses\01. CSharp-OOP-Basics-Defining-Classes-Exercises.docx" />
     <Compile Include="OOP\Basics\DefiningClasses\03.OldestFamilyMember\03.OldestFamilyMember.cs" />
