@@ -234,6 +234,14 @@
     <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Models\Soldier.cs" />
     <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Models\SpecialisedSoldier.cs" />
     <Compile Include="OOP\Advanced\InterfacesAndAbstraction\8MilitaryElite\Models\Spy.cs" />
+    <Compile Include="OOP\Advanced\IteratorsAndComparators\1ListyIterator\1ListyIterator.cs" />
+    <Compile Include="OOP\Advanced\IteratorsAndComparators\2Collection\2Collection.cs" />
+    <Compile Include="OOP\Advanced\IteratorsAndComparators\3Stack\3Stack.cs" />
+    <Compile Include="OOP\Advanced\IteratorsAndComparators\4Froggy\4Froggy.cs" />
+    <Compile Include="OOP\Advanced\IteratorsAndComparators\5ComparingObjects\5ComparingObjects.cs" />
+    <Compile Include="OOP\Advanced\IteratorsAndComparators\6StrategyPattern\6StrategyPattern.cs" />
+    <Compile Include="OOP\Advanced\IteratorsAndComparators\7EqualityLogic\7EqualityLogic.cs" />
+    <Compile Include="OOP\Advanced\IteratorsAndComparators\8PetClinics\8PetClinics.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\01.DefineAClassPerson\01.DefineAClassPerson.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\01.DefineAClassPerson\Person.cs" />
     <Compile Include="OOP\Basics\DefiningClasses\02.CreatingConstructors\02.CreatingConstructors.cs" />

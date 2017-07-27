@@ -22,4 +22,4 @@ namespace Csharp.OOP.Advanced.Generics._06GenericCountMethodDouble
         }
     }
 }
-}
+
