@@ -1,4 +1,4 @@
-﻿using Csharp.OOP.Advanced.IteratorsAndComparators._8PetClinics;
+﻿using Csharp.OOP.Advanced.EnumerationsAndAttributes._11InfernoInfinity;
 
 namespace Csharp
 {
@@ -7,7 +7,7 @@ namespace Csharp
         static void Main(string[] args)
         {
             // Launch programs from here
-            _8PetClinics.Solution();
+            _11InfernoInfinity.Solution();
         }
     }
 }
